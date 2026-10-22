@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio de Robin Anselin</title>
+<meta name="description" content="Portfolio de Robin Anselin, géographe-aménageur : diagnostic territorial, cartographie SIG, agriculture, gestion de l'eau, concertation et énergies renouvelables.">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#projets">Aller aux projets</a>
+
+<header class="topbar" id="haut">
+  <a class="topbar__name" href="#haut">Robin Anselin</a>
+  <button class="topbar__toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="topbar__nav" aria-label="Sections">
+    <a href="#profil">Profil</a>
+    <a href="#projets">Projets</a>
+    <a href="#methodes">Méthodes et outils</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#contact">Contact</a>
+    <button type="button" class="topbar__cv" data-cv>CV</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ACCUEIL -->
+  <section class="hero" aria-labelledby="hero-titre">
+    <figure class="hero__map">
+      <img src="assets/img/hero-saint-omer.webp" width="1800" height="1343"
+           alt="Extrait de carte du Pays de Saint-Omer : classes de pente en dégradé du vert au rouge, réseau de cours d'eau coloré selon leur état chimique, limites communales.">
+      <span class="hero__tick hero__tick--n" aria-hidden="true">N</span>
+    </figure>
+    <div class="cartouche">
+      <p class="cartouche__kicker">Portfolio</p>
+      <h1 id="hero-titre" class="cartouche__name">Robin<br>Anselin</h1>
+      <p class="cartouche__title">Géographe-aménageur, développement de projets d'énergies renouvelables et transitions territoriales</p>
+      <p class="cartouche__lead">Je lis un territoire par la carte et par le terrain, puis j'en tire des supports qui aident à décider. Prospection éolienne et partage de la valeur chez BayWa r.e. en Montagne d'Ardèche, diagnostic agricole et prospective 2050 pour l'agence d'urbanisme du Pays de Saint-Omer, gestion de l'eau en Gascogne et en vallée de la Garonne.</p>
+      <div class="cartouche__actions">
+        <a class="btn btn--plein" href="#projets">Voir les projets</a>
+        <button type="button" class="btn" data-cv>Voir le CV</button>
+        <a class="btn" href="#contact">Me contacter</a>
+      </div>
+      <div class="cartouche__legende">
+        <span class="echelle" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <p>Carte en fond : pentes et état chimique des cours d'eau, Pays de Saint-Omer. Réalisation Robin Anselin, ArcGIS Pro, 2025. Sources : data.gouv, BRGM, DCE.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil" class="section profil" aria-labelledby="profil-titre">
+    <div class="section__head">
+      <h2 id="profil-titre">Profil</h2>
+      <p class="section__intro">Étudiant en Master 2 Géographie, Aménagement, Environnement et Développement, parcours Transitions environnementales dans les territoires (TRENT), à l'Université Toulouse Jean Jaurès.</p>
+    </div>
+
+    <div class="profil__grid">
+      <div class="profil__texte">
+        <p>Je viens de l'urbanisme de terrain : un DUT Gestion urbaine et un stage au service urbanisme d'une commune de la métropole lilloise, puis une licence d'aménagement entre Versailles Saint-Quentin et Lille. Le master m'a orienté vers les transitions rurales et environnementales : agriculture, eau, paysages, puis le développement éolien, sujet de mon stage et de mon mémoire de M2 chez BayWa r.e.</p>
+        <p>Mes travaux combinent toujours trois registres : des données traitées et cartographiées, des entretiens ou observations auprès des acteurs, et une restitution lisible par des élus ou des techniciens.</p>
+
+        <h3>Domaines d'intervention</h3>
+        <ul class="domaines">
+          <li>Diagnostic territorial, environnemental et paysager</li>
+          <li>Agriculture, transition agroécologique et prospective</li>
+          <li>Gestion de l'eau et Natura 2000</li>
+          <li>Développement éolien et partage de la valeur</li>
+          <li>Cartographie et SIG</li>
+          <li>Concertation et systèmes d'acteurs</li>
+        </ul>
+      </div>
+
+      <div class="demarche">
+        <h3>Ma démarche, du terrain à la décision</h3>
+        <ol class="demarche__etapes">
+          <li><strong>Situer.</strong> Lire les documents de planification et les cadres réglementaires (SCoT, SAGE, DOCOB, PAC) pour comprendre ce qui contraint le territoire.</li>
+          <li><strong>Mesurer.</strong> Rassembler les données publiques (RA, RPG, BD TOPO, DCE, INSEE) et les croiser dans un SIG.</li>
+          <li><strong>Écouter.</strong> Mener des entretiens semi-directifs et observer les ateliers pour saisir ce que les chiffres ne disent pas.</li>
+          <li><strong>Restituer.</strong> Produire cartes, synthèses AFOM, scénarios et supports de médiation directement utilisables.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="preuves">
+      <h3>Compétences démontrées</h3>
+      <ul class="preuves__liste">
+        <li><span class="preuves__quoi">Qualifier un site éolien</span><span class="preuves__ou">Prospection sous QGIS, hiérarchie des contraintes (habitat, aéronautique, environnement, PNR) et tests de pré-faisabilité en Montagne d'Ardèche. <button class="lien-projet" data-open="baywa">Voir le projet</button></span></li>
+        <li><span class="preuves__quoi">Présenter un projet aux élus</span><span class="preuves__ou">Cartes simplifiées pour le conseil municipal, estimation de l'IFER, dispositifs de partage de la valeur, quatre entretiens avec des élus. <button class="lien-projet" data-open="baywa">Voir le projet</button></span></li>
+        <li><span class="preuves__quoi">Produire un atlas cartographique complet</span><span class="preuves__ou">Une vingtaine de cartes sous ArcGIS Pro pour le diagnostic agricole du Pays de Saint-Omer. <button class="lien-projet" data-open="saint-omer">Voir le projet</button></span></li>
+        <li><span class="preuves__quoi">Conduire une enquête qualitative</span><span class="preuves__ou">Une trentaine d'entretiens semi-directifs avec agriculteurs, institutions et associations, guides adaptés à chaque acteur. <button class="lien-projet" data-open="saint-omer">Voir le projet</button></span></li>
+        <li><span class="preuves__quoi">Construire une prospective</span><span class="preuves__ou">Quatre scénarios agricoles à 2050 fondés sur Climadiag, la PAC et les signaux faibles des entretiens. <button class="lien-projet" data-open="saint-omer">Voir le projet</button></span></li>
+        <li><span class="preuves__quoi">Coordonner un travail d'équipe</span><span class="preuves__ou">Référent d'une équipe de cinq étudiants pour un diagnostic Natura 2000 commandé par l'Établissement public Garonne. <button class="lien-projet" data-open="garonne">Voir le projet</button></span></li>
+        <li><span class="preuves__quoi">Analyser un système d'acteurs</span><span class="preuves__ou">Grille des capitaux, analyse de la démocratie environnementale et leviers de sortie de conflit sur la friche Saint-Sauveur. <button class="lien-projet" data-open="saint-sauveur">Voir le projet</button></span></li>
+        <li><span class="preuves__quoi">Concevoir une action de sensibilisation</span><span class="preuves__ou">Film-documentaire citoyen et cycle de projections-débats pour la vallée de la Lèze. <button class="lien-projet" data-open="leze">Voir le projet</button></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="section projets" aria-labelledby="projets-titre">
+    <div class="section__head">
+      <h2 id="projets-titre">Projets</h2>
+      <p class="section__intro">Sept travaux choisis parmi mes stages et ateliers de 2023 à 2026. Chaque fiche précise le cadre, mon rôle réel et ce qui a été produit. Les travaux collectifs sont signalés comme tels.</p>
+    </div>
+
+    <fieldset class="couches">
+      <legend>Afficher par thème</legend>
+      <div class="couches__liste" id="filtres"></div>
+    </fieldset>
+    <p class="couches__etat" id="filtres-etat" aria-live="polite"></p>
+
+    <div class="planches" id="planches"></div>
+    <noscript><p class="noscript">Le détail des projets nécessite JavaScript. Les documents sources sont listés dans le fichier README.md.</p></noscript>
+
+    <div class="autres">
+      <h3>Autres travaux non détaillés ici</h3>
+      <ul>
+        <li>Diagnostic environnemental de territoire, de Montréjeau au Port de Balès (M1, 2024-2025, travail collectif à cinq) : portrait de territoire, enquête par questionnaire et propositions de valorisation paysagère.</li>
+        <li>Diagnostic de l'espace public de la place Antonin-Froidure, quartier Borderouge à Toulouse (M1, 2024, travail individuel) : observation des usages, AFOM et programme d'aménagement.</li>
+        <li>Mémoire de stage au service urbanisme de la mairie de Wattignies (DUT, 2022) : fonctionnement d'un service d'urbanisme et outils réglementaires.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- METHODES -->
+  <section id="methodes" class="section methodes" aria-labelledby="methodes-titre">
+    <div class="section__head">
+      <h2 id="methodes-titre">Méthodes et outils</h2>
+      <p class="section__intro">Uniquement ce que les livrables présentés permettent de vérifier.</p>
+    </div>
+
+    <div class="methodes__grid">
+      <article class="methode">
+        <h3>Analyse territoriale</h3>
+        <p>Portraits de territoire, synthèses AFOM, lecture des dynamiques agricoles et démographiques, observation de terrain et photographie.</p>
+        <p class="methode__ou">Mis en œuvre : <button class="lien-projet" data-open="saint-omer">Saint-Omer</button>, <button class="lien-projet" data-open="garonne">Garonne 2</button>, <button class="lien-projet" data-open="leze">Lèze</button></p>
+      </article>
+      <article class="methode">
+        <h3>SIG et cartographie</h3>
+        <p>Jointures et filtres spatiaux, croisements multicritères (pentes, qualité de l'eau, cultures, captages), zones tampons, comparaison diachronique, mise en page avec légende, échelle et sources.</p>
+        <p class="methode__ou">Mis en œuvre : <button class="lien-projet" data-open="baywa">Montagne d'Ardèche</button>, <button class="lien-projet" data-open="saint-omer">Saint-Omer</button>, <button class="lien-projet" data-open="porte-de-paris">Porte de Paris</button></p>
+      </article>
+      <article class="methode">
+        <h3>Analyse documentaire et réglementaire</h3>
+        <p>Code de l'environnement et de l'urbanisme (distance de 500 m, RNU), loi APER, SRADDET, SCoT, charte de PNR, avis MRAe, IFER, DOCOB Natura 2000, SAGE, PAC.</p>
+        <p class="methode__ou">Mis en œuvre : <button class="lien-projet" data-open="baywa">Montagne d'Ardèche</button>, <button class="lien-projet" data-open="garonne">Garonne 2</button>, <button class="lien-projet" data-open="neste">Système Neste</button>, <button class="lien-projet" data-open="saint-omer">Saint-Omer</button></p>
+      </article>
+      <article class="methode">
+        <h3>Rédaction, synthèse et présentation</h3>
+        <p>Mémoire de recherche appliquée, notes de cadrage, posters de synthèse, supports de soutenance, fiches acteurs, guides d'entretien.</p>
+        <p class="methode__ou">Mis en œuvre : <button class="lien-projet" data-open="neste">Système Neste</button>, <button class="lien-projet" data-open="saint-sauveur">Saint-Sauveur</button>, <button class="lien-projet" data-open="leze">Lèze</button></p>
+      </article>
+    </div>
+
+    <div class="outils">
+      <h3>Outils et données attestés par les livrables</h3>
+      <table class="outils__table">
+        <caption class="visually-hidden">Outils et sources de données, avec le travail où ils apparaissent</caption>
+        <thead><tr><th scope="col">Outil ou donnée</th><th scope="col">Usage vérifiable</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">ArcGIS Pro</th><td>Atlas du diagnostic agricole du Pays de Saint-Omer (2025)</td></tr>
+          <tr><th scope="row">QGIS</th><td>Prospection éolienne chez BayWa r.e. : contraintes, pentes, extraction du RPG, choix machine (2026) ; carte départementale de l'Ariège (QGIS 3.40, 2025)</td></tr>
+          <tr><th scope="row">ArcGIS (isochrones)</th><td>Accessibilité des aménités à 30 minutes, diagnostic Montréjeau – Port de Balès</td></tr>
+          <tr><th scope="row">Canva, Google Slides, Word</th><td>Posters, supports de soutenance, fiche acteur, rapports</td></tr>
+          <tr><th scope="row">Données agricoles</th><td>Recensement agricole 2010 et 2020, Agreste, RPG, OTEX</td></tr>
+          <tr><th scope="row">Données environnementales</th><td>BD TOPO, BD Carto, Corine Land Cover, DCE, BRGM, Géorisques, SIEAG, Climadiag</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours" class="section parcours" aria-labelledby="parcours-titre">
+    <div class="section__head">
+      <h2 id="parcours-titre">Parcours</h2>
+    </div>
+    <ol class="frise">
+      <li class="frise__item frise__item--pro">
+        <p class="frise__date">Avril – octobre 2026</p>
+        <h3>Assistant chef de projet éolien, BayWa r.e. France</h3>
+        <p class="frise__lieu">Agence de Montpellier, stage de M2</p>
+        <p>Prospection de sites sous QGIS, faisabilité réglementaire au regard de la charte du PNR des Monts d'Ardèche et des documents d'urbanisme, rencontres avec les élus et présentation du partage de la valeur, fiches techniques et validation interne des secteurs. Mémoire soutenu le 9 septembre 2026.</p>
+      </li>
+      <li class="frise__item frise__item--pro">
+        <p class="frise__date">Avril – août 2025</p>
+        <h3>Chargé d'études en diagnostic agricole et prospective</h3>
+        <p class="frise__lieu">Agence d'urbanisme et de développement du Pays de Saint-Omer, stage de M1</p>
+        <p>Diagnostic agricole croisant RPG, recensement agricole et INSEE, scénarios à l'horizon 2050, entretiens et restitution aux élus. Mémoire soutenu le 3 septembre 2025.</p>
+      </li>
+      <li class="frise__item">
+        <p class="frise__date">2024 – 2026</p>
+        <h3>Master Géographie, Aménagement, Environnement et Développement</h3>
+        <p class="frise__lieu">Parcours TRENT, Université Toulouse Jean Jaurès</p>
+        <p>Mémoire de M2 sur le partage territorial de la valeur et l'appropriation locale des projets éoliens. Ateliers pour le SMIVAL (vallée de la Lèze) et l'Établissement public Garonne.</p>
+      </li>
+      <li class="frise__item">
+        <p class="frise__date">2022 – 2024</p>
+        <h3>Licence Géographie et aménagement</h3>
+        <p class="frise__lieu">Université de Versailles Saint-Quentin-en-Yvelines, puis Université de Lille</p>
+        <p>L2 : diagnostic territorial de Trappes et de Saint-Quentin-en-Yvelines. L3 : cartographie de la perméabilité des sols du centre de Lille.</p>
+      </li>
+      <li class="frise__item frise__item--pro">
+        <p class="frise__date">Février – mai 2022</p>
+        <h3>Stage au service urbanisme, mairie de Wattignies</h3>
+        <p class="frise__lieu">Métropole européenne de Lille</p>
+        <p>Instruction des autorisations du droit des sols, suivi du projet de renouvellement urbain du Blanc-Riez avec la MEL, cartes d'aide à la décision.</p>
+      </li>
+      <li class="frise__item">
+        <p class="frise__date">2020 – 2022</p>
+        <h3>DUT Carrières sociales, option Gestion urbaine</h3>
+        <p class="frise__lieu">IUT de Tourcoing, Université de Lille</p>
+      </li>
+    </ol>
+    <p class="frise__plus">Anglais B2, espagnol A1. Permis B. BAFA, animation depuis 2018. MOOC énergies renouvelables.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact" aria-labelledby="contact-titre">
+    <div class="contact__inner">
+      <h2 id="contact-titre">Contact</h2>
+      <p class="contact__lead">Disponible à partir de novembre 2026 pour un stage ou un poste en développement de projets d'énergies renouvelables, en études SIG et environnement ou en planification territoriale. Toulouse et Occitanie, métropole lilloise, Paris et petite couronne.</p>
+      <dl class="contact__liste">
+        <div><dt>E-mail</dt><dd><a href="mailto:robin.anselin6@gmail.com" class="contact__val">robin.anselin6@gmail.com</a> <button type="button" class="copier" data-copier="robin.anselin6@gmail.com">Copier</button></dd></div>
+        <div><dt>Téléphone</dt><dd><a href="tel:+33789598248" class="contact__val">07 89 59 82 48</a> <button type="button" class="copier" data-copier="07 89 59 82 48">Copier</button></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/robinanselin" target="_blank" rel="noopener" class="contact__val">linkedin.com/in/robinanselin</a></dd></div>
+        <div><dt>CV</dt><dd><button type="button" class="contact__cv" data-cv>Voir le CV</button> <a href="assets/docs/cv-robin-anselin.pdf" class="contact__cv contact__cv--pdf" id="cv-telecharger" target="_blank" rel="noopener">Télécharger (PDF)</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <p>Portfolio construit à partir de travaux universitaires et professionnels, 2022 – 2026. Le mémoire réalisé chez BayWa r.e. est présenté avec l'accord de l'entreprise. Les cartes et supports collectifs sont crédités à leurs auteurs dans chaque fiche. Les photographies et illustrations de tiers figurant dans les supports reproduits restent la propriété de leurs auteurs.</p>
+  <p><a href="#haut">Retour en haut</a></p>
+</footer>
+
+<!-- Fiche projet -->
+<dialog class="fiche" id="fiche" aria-labelledby="fiche-titre">
+  <div class="fiche__barre">
+    <button class="fiche__nav" id="fiche-prec" type="button">Projet précédent</button>
+    <button class="fiche__nav" id="fiche-suiv" type="button">Projet suivant</button>
+    <button class="fiche__fermer" id="fiche-fermer" type="button" aria-label="Fermer la fiche">Fermer</button>
+  </div>
+  <div class="fiche__contenu" id="fiche-contenu"></div>
+</dialog>
+
+<!-- Visionneuse -->
+<dialog class="loupe" id="loupe" aria-label="Visionneuse d'image">
+  <div class="loupe__barre">
+    <p class="loupe__legende" id="loupe-legende"></p>
+    <div class="loupe__outils">
+      <button type="button" id="loupe-moins" aria-label="Dézoomer">−</button>
+      <button type="button" id="loupe-ajuster">Ajuster</button>
+      <button type="button" id="loupe-plus" aria-label="Zoomer">+</button>
+      <a id="loupe-original" href="#" target="_blank" rel="noopener">Taille réelle</a>
+      <button type="button" id="loupe-fermer">Fermer</button>
+    </div>
+  </div>
+  <div class="loupe__scene" id="loupe-scene">
+    <img id="loupe-img" alt="" draggable="false">
+  </div>
+  <p class="loupe__aide">Molette ou pincement pour zoomer, glisser pour se déplacer, double-clic pour basculer.</p>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
